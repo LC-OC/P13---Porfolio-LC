@@ -8,11 +8,15 @@
 </head>
 <body> 
     <header>
+        <div id="logo_site">
+            <span>LOGO</span>
+        </div>
         <nav>
             <?php
                 if (has_nav_menu('primary')) {
                     wp_nav_menu(array('theme_location' => 'primary'));
                 }
+                get_template_part( './template-parts/sections-nav' );
             ?>
         </nav>
     </header>

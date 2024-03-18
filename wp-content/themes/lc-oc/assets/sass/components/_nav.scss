@@ -1,0 +1,27 @@
+#sections_link_container {
+    font-family: $raleway;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+        align-items: center;
+        width: 50%;
+        a {
+            text-decoration: none;
+            padding: 0 1rem;
+            color: #FDF7E4;
+            &:visited {
+                color: #FDF7E4;
+            }
+            &:active {
+                color: #FDF7E4;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #55060d8b;
+    #logo_site {
+        font-size: 16px;
+        font-family: $playfair-display;
+        color: #FDF7E4;
+    }
+}
