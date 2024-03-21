@@ -1,0 +1,42 @@
+#formations_container {
+    //background-color: #202020; COLOR BACKGROUND NOIR GRISATRE
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/neon_museum_background.jpg");
+    background-size: cover;
+    height: 80%;
+    width: 100%;
+    color: #B9B7BD;
+    margin-top: -1.5rem;
+    padding: 2rem 0;
+    h2 {
+        text-align: center;
+        font-family: $playfair-display;
+        font-size: 35px;
+        text-transform: uppercase;
+        text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+        0px -4px 10px rgba(255,255,255,0.3);
+    }
+    #formations {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 5rem;
+        .cards_formations {
+            width: 40%;
+            background: rgba(255, 255, 255, 0.35);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            text-align: center;
+            padding: 3rem;
+            h3 {
+                text-transform: uppercase;
+                color: #0A0708;
+                font-family: $playfair-display;
+                font-family: 24px;
+                font-style: italic;
+            }
+        }
+    }
+}
