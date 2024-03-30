@@ -2,8 +2,10 @@
     <h2>Mes Projets</h2>
     <?php 
             $args = array(
-                'post_type' => 'projet',
+                'post_type' => 'projets',
                 'posts_per_page' => -1,
+                'orderby' => 'none',
+                'post_status' => 'publish',
             );
             $the_query = new WP_Query($args);
             if (have_posts()) : while ( $the_query->have_posts() ) : $the_query->the_post(); 

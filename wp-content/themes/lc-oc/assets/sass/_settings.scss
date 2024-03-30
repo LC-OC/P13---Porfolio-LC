@@ -1,6 +1,12 @@
 // fonts
 
-$playfair-display: "Playfair Display", serif;
+@font-face {
+  font-family: 'enchantedLand';
+  src: url("../fonts/Enchanted-Land.ttf") format("truetype");
+}
+
+
+$enchanted-land: "enchantedLand", sans-serif;
 $raleway: "Raleway", sans-serif;
 
 

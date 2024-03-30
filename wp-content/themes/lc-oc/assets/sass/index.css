@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "enchantedLand";
+  src: url("../fonts/Enchanted-Land.ttf") format("truetype");
+}
 html,
 body {
   margin: 0;
@@ -16,7 +20,7 @@ body {
 }
 #formations_container h2 {
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: "enchantedLand", sans-serif;
   font-size: 35px;
   text-transform: uppercase;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
@@ -41,7 +45,7 @@ body {
 #formations_container #formations .cards_formations h3 {
   text-transform: uppercase;
   color: #0A0708;
-  font-family: "Playfair Display", serif;
+  font-family: "enchantedLand", sans-serif;
   font-family: 24px;
   font-style: italic;
 }
@@ -61,8 +65,42 @@ header {
 }
 header #logo_site {
   font-size: 16px;
-  font-family: "Playfair Display", serif;
+  font-family: "enchantedLand", sans-serif;
   color: #FDF7E4;
+}
+
+#hobbies_container {
+  background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_hobbies.jpg");
+  background-size: cover;
+  color: white;
+  padding-bottom: 3rem;
+}
+#hobbies_container #hobbies_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#hobbies_container #hobbies_content #hobbies_list {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#hobbies_container #hobbies_content #hobbies_list #travel_hobby {
+  width: 600px;
+  padding-right: 4rem;
+}
+#hobbies_container #hobbies_content #hobbies_list #travel_hobby:hover {
+  transform: scale(1.1);
+}
+#hobbies_container #hobbies_content #hobbies_list #reading_hobby, #hobbies_container #hobbies_content #hobbies_list #movies_hobby, #hobbies_container #hobbies_content #hobbies_list #gaming_hobby {
+  width: 250px;
+}
+#hobbies_container #hobbies_content #hobbies_list #reading_hobby:hover, #hobbies_container #hobbies_content #hobbies_list #movies_hobby:hover, #hobbies_container #hobbies_content #hobbies_list #gaming_hobby:hover {
+  transform: scale(1.1);
 }
 
 #sections_link_container {
@@ -97,20 +135,41 @@ header #logo_site {
   height: 100%;
   background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/baroque_background.png");
   background-size: cover;
-  font-family: "Playfair Display", serif;
+  font-family: "enchantedLand", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #DDDDDD;
 }
 #presentation_container h1 {
-  font-size: 60px;
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+  font-size: 55px;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px black;
 }
 #presentation_container h2 {
-  font-size: 40px;
-  margin-top: -2rem;
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+  font-size: 105px;
+  margin-top: -1.5rem;
+  margin-right: -16rem;
+  width: 50%;
+  font-weight: 400;
+  text-shadow: 1px 1px 1px black;
+}
+
+.project_container {
+  height: 100%;
+  width: 100%;
+  background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_project.jpg");
+  background-size: cover;
+}
+.project_container .project_page {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.project_container .project_page .separator {
+  width: 50%;
 }
 
 #skills_container {
@@ -122,7 +181,7 @@ header #logo_site {
 }
 #skills_container h2 {
   text-align: center;
-  font-family: "Playfair Display", serif;
+  font-family: "enchantedLand", sans-serif;
   font-size: 35px;
   text-transform: uppercase;
   text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
@@ -148,4 +207,11 @@ header #logo_site {
 #skills_container ul li {
   width: 45%;
   padding: 0.5rem 0;
+}
+
+#projects_min_container h2 {
+  color: pink;
+}
+#projects_min_container .project_min_content img {
+  height: 300px;
 }/*# sourceMappingURL=index.css.map */

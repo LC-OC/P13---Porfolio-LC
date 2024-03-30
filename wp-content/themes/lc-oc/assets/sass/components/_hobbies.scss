@@ -1,0 +1,35 @@
+#hobbies_container {
+    background-image: url('http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_hobbies.jpg');
+    background-size: cover;
+    color: white;
+    padding-bottom: 3rem;
+    #hobbies_content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        #hobbies_list {
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            
+        #travel_hobby{
+            width: 600px;
+            padding-right: 4rem;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        #reading_hobby, #movies_hobby, #gaming_hobby {
+            width: 250px;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    }
+    
+}

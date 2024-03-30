@@ -1,23 +1,27 @@
 <?php
  $arrayHobbies = array(
     array(
-        'title' => '',
-        'img' => '',
+        'title' => 'Châteaux, Musées et Voyages',
+        'id' => 'travel_hobby',
+        'img' => 'http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/castleHobbies.png',
 
     ),
     array(
-        'title' => '',
-        'img' => '',
+        'title' => 'Lecture',
+        'id' => 'reading_hobby',
+        'img' => 'http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/readingHobbies.png',
 
     ),
     array(
-        'title' => '',
-        'img' => '',
+        'title' => 'Films',
+        'id' => 'movies_hobby',
+        'img' => 'http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/moviesHobbies.png',
 
     ),
     array(
-        'title' => '',
-        'img' => '',
+        'title' => 'Jeux vidéos',
+        'id' => 'gaming_hobby',
+        'img' => 'http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/videoGamesHobbies.png',
 
     )
  );

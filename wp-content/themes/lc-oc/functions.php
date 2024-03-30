@@ -6,7 +6,8 @@ function portfolio_lc_style(){
 add_action('wp_enqueue_scripts','portfolio_lc_style');
 
 function add_google_fonts() {
-    wp_enqueue_style( ' add_google_fonts ', '//fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap', array(), null );}
+    wp_enqueue_style( ' add_google_fonts ', '//fonts.googleapis.com/css2?family=Raleway&display=swap', array(), null );
+}
     add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
 
 // menu header
