@@ -6,8 +6,13 @@
     #hobbies_content {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
+        #hobbies_infos {
+            #travel_hobby_hide, #reading_hobby_hide, #movies_hobby_hide, #gaming_hobby_hide {
+                display: none;
+            }
+        }
         #hobbies_list {
             width: 60%;
             display: flex;
@@ -19,17 +24,22 @@
         #travel_hobby{
             width: 600px;
             padding-right: 4rem;
+            filter: grayscale(100%);
+            cursor: pointer;
             &:hover {
                 transform: scale(1.1);
+                filter: grayscale(0);
             }
         }
         #reading_hobby, #movies_hobby, #gaming_hobby {
             width: 250px;
+            filter: grayscale(100%);
+            cursor: pointer;
             &:hover {
                 transform: scale(1.1);
+                filter: grayscale(0);
             }
         }
     }
     }
-    
 }

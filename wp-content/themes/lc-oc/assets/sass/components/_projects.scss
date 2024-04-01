@@ -1,5 +1,4 @@
 .project_container {
-    height: 100%;
     width: 100%;
     background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_project.jpg");
     background-size: cover;
@@ -8,8 +7,21 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        .separator {
+        .infos_project{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: -8rem;
+            margin-top: 8rem;
+            h1 {
+                font-family: $against-regular;
+                color: #A81A40;
+                font-size: 38px;
+            }
+            font-family: $raleway;
+            .separator {
             width: 50%;
+        }
         }
     }
 }

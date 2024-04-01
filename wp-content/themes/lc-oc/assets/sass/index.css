@@ -2,6 +2,14 @@
   font-family: "enchantedLand";
   src: url("../fonts/Enchanted-Land.ttf") format("truetype");
 }
+@font-face {
+  font-family: "theConstellation";
+  src: url("../fonts/the-constellation.ttf") format("truetype");
+}
+@font-face {
+  font-family: "againstRegular";
+  src: url("../fonts/against-regular.ttf") format("truetype");
+}
 html,
 body {
   margin: 0;
@@ -78,8 +86,11 @@ header #logo_site {
 #hobbies_container #hobbies_content {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+}
+#hobbies_container #hobbies_content #hobbies_infos #travel_hobby_hide, #hobbies_container #hobbies_content #hobbies_infos #reading_hobby_hide, #hobbies_container #hobbies_content #hobbies_infos #movies_hobby_hide, #hobbies_container #hobbies_content #hobbies_infos #gaming_hobby_hide {
+  display: none;
 }
 #hobbies_container #hobbies_content #hobbies_list {
   width: 60%;
@@ -92,15 +103,21 @@ header #logo_site {
 #hobbies_container #hobbies_content #hobbies_list #travel_hobby {
   width: 600px;
   padding-right: 4rem;
+  filter: grayscale(100%);
+  cursor: pointer;
 }
 #hobbies_container #hobbies_content #hobbies_list #travel_hobby:hover {
   transform: scale(1.1);
+  filter: grayscale(0);
 }
 #hobbies_container #hobbies_content #hobbies_list #reading_hobby, #hobbies_container #hobbies_content #hobbies_list #movies_hobby, #hobbies_container #hobbies_content #hobbies_list #gaming_hobby {
   width: 250px;
+  filter: grayscale(100%);
+  cursor: pointer;
 }
 #hobbies_container #hobbies_content #hobbies_list #reading_hobby:hover, #hobbies_container #hobbies_content #hobbies_list #movies_hobby:hover, #hobbies_container #hobbies_content #hobbies_list #gaming_hobby:hover {
   transform: scale(1.1);
+  filter: grayscale(0);
 }
 
 #sections_link_container {
@@ -157,7 +174,6 @@ header #logo_site {
 }
 
 .project_container {
-  height: 100%;
   width: 100%;
   background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_project.jpg");
   background-size: cover;
@@ -168,7 +184,20 @@ header #logo_site {
   flex-direction: row;
   justify-content: space-between;
 }
-.project_container .project_page .separator {
+.project_container .project_page .infos_project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -8rem;
+  margin-top: 8rem;
+  font-family: "Raleway", sans-serif;
+}
+.project_container .project_page .infos_project h1 {
+  font-family: "againstRegular", sans-serif;
+  color: #A81A40;
+  font-size: 38px;
+}
+.project_container .project_page .infos_project .separator {
   width: 50%;
 }
 
@@ -209,9 +238,45 @@ header #logo_site {
   padding: 0.5rem 0;
 }
 
-#projects_min_container h2 {
-  color: pink;
+#projects_min_container {
+  height: 100%;
+  width: 100%;
+  background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_project.jpg");
+  background-size: cover;
+  margin: -2rem 0;
 }
-#projects_min_container .project_min_content img {
-  height: 300px;
+#projects_min_container h2 {
+  color: #B14463;
+  padding: 2rem;
+  text-align: center;
+  font-family: "againstRegular", sans-serif;
+  text-transform: uppercase;
+}
+#projects_min_container #projects_min_list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#projects_min_container #projects_min_list .project_min_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#projects_min_container #projects_min_list .project_min_content img {
+  height: 500px;
+}
+#projects_min_container #projects_min_list .project_min_content a {
+  text-decoration: none;
+  color: black;
+  font-family: "againstRegular", sans-serif;
+}
+#projects_min_container #projects_min_list .project_min_content:hover {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  transform: scale(1.1);
+  border-radius: 15px 30px;
 }/*# sourceMappingURL=index.css.map */

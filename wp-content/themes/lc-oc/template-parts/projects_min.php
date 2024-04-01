@@ -1,6 +1,7 @@
 <div id="projects_min_container">
     <h2>Mes Projets</h2>
-    <?php 
+    <div id="projects_min_list">
+         <?php 
             $args = array(
                 'post_type' => 'projets',
                 'posts_per_page' => -1,
@@ -17,6 +18,8 @@
                 endif;
                 wp_reset_postdata();
             ?>
+    </div>
+   
 </div>
 
 

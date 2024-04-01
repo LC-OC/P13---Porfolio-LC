@@ -9,7 +9,13 @@
             <?php endforeach ?>
         </div>
         <div id="hobbies_infos">
-            
+        <?php 
+                include('arrays/arrayHobbies.php');
+                foreach($arrayHobbies as $hobbie) : ?>
+                    <div id="<?php echo $hobbie['id_hide']; ?>">
+                        <p><?php echo $hobbie['title']; ?></p>
+                    </div>
+            <?php endforeach ?>
         </div>
     </div>
 </div>
