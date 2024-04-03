@@ -1,6 +1,7 @@
 <?php
  $arrayFormations = array(
     array(
+        'id'=>'formation_js',
         'title' => "Développeur d'application - Javascript & React",
         'date' => '2021-2023',
         'school' => 'OpenClassrooms',
@@ -8,6 +9,7 @@
 
     ),
     array(
+        'id'=>'formation_wp',
         'title' => 'Développeur WordPress',
         'date' => '2023-2024',
         'school' => 'OpenClassrooms',

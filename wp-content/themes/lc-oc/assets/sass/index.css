@@ -18,26 +18,29 @@ body {
 }
 
 #formations_container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/neon_museum_background.jpg");
-  background-size: cover;
-  height: 80%;
+  height: 100%;
   width: 100%;
+  background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_project.jpg");
+  background-size: cover;
   color: #B9B7BD;
-  margin-top: -1.5rem;
   padding: 2rem 0;
 }
 #formations_container h2 {
+  color: #B14463;
+  padding: 2rem;
   text-align: center;
-  font-family: "enchantedLand", sans-serif;
-  font-size: 35px;
+  font-family: "againstRegular", sans-serif;
   text-transform: uppercase;
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+}
+#formations_container h2::after {
+  content: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/merman.png");
+  position: absolute;
+  left: -5rem;
+  bottom: -36rem;
 }
 #formations_container #formations {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 5rem;
+  flex-direction: column;
 }
 #formations_container #formations .cards_formations {
   width: 40%;
@@ -49,13 +52,22 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   text-align: center;
   padding: 3rem;
+  margin: 2rem;
 }
 #formations_container #formations .cards_formations h3 {
-  text-transform: uppercase;
   color: #0A0708;
-  font-family: "enchantedLand", sans-serif;
+  font-family: "againstRegular", sans-serif;
   font-family: 24px;
   font-style: italic;
+}
+#formations_container #formations #formation_js {
+  position: absolute;
+  right: 0;
+}
+#formations_container #formations #formation_wp {
+  position: absolute;
+  left: 0;
+  bottom: -38rem;
 }
 
 header {
@@ -82,6 +94,14 @@ header #logo_site {
   background-size: cover;
   color: white;
   padding-bottom: 3rem;
+}
+#hobbies_container h2 {
+  color: white;
+  padding: 2rem;
+  text-align: right;
+  font-family: "againstRegular", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
 }
 #hobbies_container #hobbies_content {
   display: flex;
@@ -204,16 +224,17 @@ header #logo_site {
 #skills_container {
   height: 100%;
   width: 100%;
-  background-color: #31363F;
+  background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/medusa_background.jpg");
+  background-size: cover;
   margin-top: -2rem;
   padding: 2rem 0;
 }
 #skills_container h2 {
   text-align: center;
-  font-family: "enchantedLand", sans-serif;
+  font-family: "againstRegular", sans-serif;
   font-size: 35px;
   text-transform: uppercase;
-  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0px -4px 10px rgba(255, 255, 255, 0.3);
+  color: white;
 }
 #skills_container ul {
   background: rgba(255, 255, 255, 0.35);

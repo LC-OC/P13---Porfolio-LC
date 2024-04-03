@@ -1,16 +1,16 @@
 #skills_container {
     height: 100%;
     width: 100%;
-    background-color: #31363F;
+    background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/medusa_background.jpg");
+    background-size: cover;
     margin-top: -2rem;
     padding: 2rem 0;
     h2 {
         text-align: center;
-        font-family: $enchanted-land;
+        font-family: $against-regular;
         font-size: 35px;
         text-transform: uppercase;
-        text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-        0px -4px 10px rgba(255,255,255,0.3);
+        color: white;
     }
     ul {
         background: rgba(255, 255, 255, 0.35);

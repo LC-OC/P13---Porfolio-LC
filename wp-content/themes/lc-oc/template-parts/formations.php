@@ -4,7 +4,7 @@
         <?php 
             include('arrays/arrayFormations.php');
             foreach($arrayFormations as $formation) : ?>
-            <div class="cards_formations">
+            <div class="cards_formations" id="<?php echo $formation['id']; ?>">
                 <h3><?php echo $formation['title']; ?></h3>
             </div>
         <?php endforeach ?>
