@@ -23,6 +23,11 @@ function register_menu_footer_portfolio_lc() {
 add_action('after_setup_theme', 'register_menu_footer_portfolio_lc');
 
 
+function scripts() {
+    wp_enqueue_script( 'script-swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array( 'jquery' ),'',true );
+    wp_enqueue_script( 'script-carousel', get_stylesheet_directory_uri() . '/assets/js/carouselSkills.js', array( 'jquery' ),'',true );    
+}
+add_action( 'wp_enqueue_scripts', 'scripts' );
 
 
 // error - conflit plugin avec thème ?

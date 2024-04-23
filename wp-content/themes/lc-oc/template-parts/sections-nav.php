@@ -3,16 +3,16 @@
         <a href="#presentation_container">
             <li>Présentation</li>
         </a>
-        <a href="#">
+        <a href="#formations_container">
             <li>Formations</li>
         </a>
-        <a href="#">
+        <a href="#skills_container">
             <li>Compétences</li>
         </a>
-        <a href="#">
+        <a href="#projects_min_container">
             <li>Projets</li>
         </a>
-        <a href="#">
+        <a href="#hobbies_container">
             <li>Loisirs</li>
         </a>
     </ul>
