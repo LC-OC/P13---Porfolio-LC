@@ -109,12 +109,23 @@ header #logo_site {
   font-family: "enchantedLand", sans-serif;
   color: #FDF7E4;
 }
+header #logo_site a {
+  text-decoration: none;
+  color: #FDF7E4;
+}
+header #logo_site a:visited {
+  color: #FDF7E4;
+}
+header #logo_site a:active {
+  color: #FDF7E4;
+}
 
 #hobbies_container {
   background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_hobbies.jpg");
   background-size: cover;
   color: white;
   padding-bottom: 3rem;
+  padding-top: 2rem;
 }
 #hobbies_container h2 {
   color: white;
@@ -166,6 +177,7 @@ header #logo_site {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 400;
+  margin-right: 3rem;
 }
 #sections_link_container ul {
   display: flex;
@@ -247,7 +259,7 @@ header #logo_site {
   width: 100%;
   background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/medusa_background.jpg");
   background-size: cover;
-  margin-top: -2rem;
+  margin: -2rem 0;
   padding: 2rem 0;
   color: black;
 }
@@ -255,6 +267,7 @@ header #logo_site {
   text-align: center;
   font-family: "againstRegular", sans-serif;
   font-size: 35px;
+  padding: 2rem;
   text-transform: uppercase;
   color: white;
 }
@@ -284,6 +297,7 @@ header #logo_site {
   background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_project.jpg");
   background-size: cover;
   margin: -2rem 0;
+  padding: 2rem 0 3rem 0;
 }
 #projects_min_container h2 {
   color: #B14463;

@@ -9,7 +9,9 @@
 <body> 
     <header>
         <div id="logo_site">
-            <span>LOGO</span>
+            <a href="http://localhost/portfolio-lc/">
+                <span>LOGO</span>
+            </a>
         </div>
         <nav>
             <?php

@@ -3,13 +3,14 @@
     width: 100%;
     background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/medusa_background.jpg");
     background-size: cover;
-    margin-top: -2rem;
+    margin: -2rem 0;
     padding: 2rem 0;
     color: black;
     h2 {
         text-align: center;
         font-family: $against-regular;
         font-size: 35px;
+        padding: 2rem;
         text-transform: uppercase;
         color: white;
     }

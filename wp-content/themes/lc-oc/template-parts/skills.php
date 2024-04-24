@@ -1,17 +1,9 @@
+
 <div id="skills_container">
     <h2>Mes compétences</h2>
-    <div class="swiper sample-slider swiper_skills">
-        <div class="swiper-wrapper">
-        <?php 
-        /*
-            include('arrays/arraySkills.php');
-            foreach($arraySkills as $skill) {
-                echo '<div class="swiper-slide">';
-                echo '<p>';
-                echo $skill['title'];
-                echo '</p>';
-                echo '</div>';
-            } */
-           ?>
-        </div>
+    <div class="carousel_skills">
+        <i class="fa-solid fa-arrow-left" id="arrow_left_carousel_skills"></i>
+        <p class="slide_carousel_skill"></p>
+        <i class="fa-solid fa-arrow-right" id="arrow_right_carousel_skills"></i>
+    </div>
 </div>
