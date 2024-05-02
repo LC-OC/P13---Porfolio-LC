@@ -54,7 +54,6 @@ const arrowRightCarouselSkill = document.getElementById(
   "arrow_right_carousel_skills"
 );
 const slideCarouselSkill = document.querySelector(".slide_carousel_skill");
-console.log(slideCarouselSkill);
 
 let slidesLength = arraySkills.length;
 let currentSlideIndex = 0;
@@ -67,7 +66,6 @@ function prevSlide() {
   } else {
     currentSlideIndex = slidesLength - 1;
   }
-  console.log("to the left");
   changeSlide();
 }
 
@@ -77,7 +75,6 @@ function nextSlide() {
   } else {
     currentSlideIndex = 0;
   }
-  console.log("to the right");
   changeSlide();
 }
 
@@ -87,3 +84,11 @@ function changeSlide() {
 
 arrowLeftCarouselSkill.addEventListener("click", prevSlide);
 arrowRightCarouselSkill.addEventListener("click", nextSlide);
+
+jQuery(document).keydown(function (e) {
+  if (e.keyCode == 37) {
+    prevSlide();
+  } else if (e.keyCode == 39) {
+    nextSlide();
+  }
+});

@@ -18,13 +18,19 @@ body {
 }
 
 footer {
-  background-color: #31363F;
+  background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/stars_background.jpg");
+  background-size: auto;
   color: #FDF7E4;
 }
 footer #menu-footer {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem 15rem;
+  font-family: "Raleway", sans-serif;
 }
 footer a {
   text-decoration: none;
@@ -94,6 +100,7 @@ footer a:active {
 header {
   width: 100%;
   position: fixed;
+  z-index: 2;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -170,6 +177,26 @@ header #logo_site a:active {
 #hobbies_container #hobbies_content #hobbies_list #reading_hobby:hover, #hobbies_container #hobbies_content #hobbies_list #movies_hobby:hover, #hobbies_container #hobbies_content #hobbies_list #gaming_hobby:hover {
   transform: scale(1.1);
   filter: grayscale(0);
+}
+
+#modale_contact {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+}
+#modale_contact.overlay {
+  visibility: visible;
+  opacity: 1;
+}
+#modale_contact #modale_contact_container {
+  position: inherit;
+  z-index: 2;
 }
 
 #sections_link_container {
@@ -271,30 +298,11 @@ header #logo_site a:active {
   text-transform: uppercase;
   color: white;
 }
-#skills_container .swiper {
-  width: 100%;
-  height: 100%;
-}
-#skills_container .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#skills_container .swiper-slide p {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
 #projects_min_container {
   height: 100%;
   width: 100%;
-  background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_project.jpg");
+  background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/old_paper_background.jpg");
   background-size: cover;
   margin: -2rem 0;
   padding: 2rem 0 3rem 0;
@@ -333,4 +341,29 @@ header #logo_site a:active {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   transform: scale(1.1);
   border-radius: 15px 30px;
+}
+
+.carousel_skills {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 80%;
+  height: 30%;
+  padding: 0 1rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel_skills .slide_carousel_skill {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+.carousel_skills #arrow_left_carousel_skills, .carousel_skills #arrow_right_carousel_skills {
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

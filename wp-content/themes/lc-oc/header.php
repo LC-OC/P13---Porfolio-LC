@@ -19,6 +19,7 @@
                     wp_nav_menu(array('theme_location' => 'primary'));
                 }
                 get_template_part( './template-parts/sections-nav' );
+                
             ?>
         </nav>
     </header>

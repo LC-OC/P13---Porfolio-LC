@@ -1,4 +1,3 @@
-
 <div id="skills_container">
     <h2>Mes compétences</h2>
     <div class="carousel_skills">

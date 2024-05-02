@@ -15,5 +15,8 @@
         <a href="#hobbies_container">
             <li>Loisirs</li>
         </a>
+        <a id="open_contact_form" href="#">
+            <li>Contact</li>
+        </a>
     </ul>
 </div>

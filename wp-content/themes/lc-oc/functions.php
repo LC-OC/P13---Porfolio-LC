@@ -25,6 +25,7 @@ add_action('after_setup_theme', 'register_menu_footer_portfolio_lc');
 
 function scripts() {
     wp_enqueue_script( 'script-carousel', get_stylesheet_directory_uri() . '/assets/js/carouselSkills.js', array( 'jquery' ),'',true );    
+    wp_enqueue_script( 'script-modale', get_stylesheet_directory_uri() . '/assets/js/modale.js', array( 'jquery' ),'',true );    
     wp_enqueue_script( 'script-font-awesome', 'https://kit.fontawesome.com/019b68e105.js', array( 'jquery' ),'' );
 }
 add_action( 'wp_enqueue_scripts', 'scripts' );
