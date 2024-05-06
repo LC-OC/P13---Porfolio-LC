@@ -17,7 +17,14 @@ body {
   height: 100%;
 }
 
+#show_footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
 footer {
+  display: none;
   background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/stars_background.jpg");
   background-size: auto;
   color: #FDF7E4;
@@ -47,20 +54,25 @@ footer a:active {
 #formations_container {
   height: 100%;
   width: 100%;
-  background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_project.jpg");
-  background-size: cover;
+  background-color: #212121;
   color: #B9B7BD;
   padding: 2rem 0;
 }
 #formations_container h2 {
-  color: #B14463;
+  color: #FFEAA7;
   padding: 2rem;
   text-align: center;
   font-family: "againstRegular", sans-serif;
   text-transform: uppercase;
 }
+#formations_container h2::before {
+  content: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/sea_life.png");
+  position: absolute;
+  right: 10rem;
+  bottom: -44rem;
+}
 #formations_container h2::after {
-  content: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/merman.png");
+  content: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/merman_white.png");
   position: absolute;
   left: -5rem;
   bottom: -36rem;
@@ -91,10 +103,31 @@ footer a:active {
   position: absolute;
   right: 0;
 }
+#formations_container #formations #formation_js ul {
+  margin-left: -25px;
+}
 #formations_container #formations #formation_wp {
   position: absolute;
   left: 0;
   bottom: -38rem;
+}
+#formations_container #formations ul {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#formations_container #formations ul li {
+  list-style: none;
+  position: relative;
+  padding: 0 10px;
+}
+#formations_container #formations ul i {
+  color: #FFEAA7;
 }
 
 header {
@@ -115,6 +148,13 @@ header #logo_site {
   font-size: 16px;
   font-family: "enchantedLand", sans-serif;
   color: #FDF7E4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 24px;
+}
+header #logo_site img {
+  height: 50px;
 }
 header #logo_site a {
   text-decoration: none;
@@ -189,6 +229,9 @@ header #logo_site a:active {
   background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
   opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #modale_contact.overlay {
   visibility: visible;
@@ -197,6 +240,58 @@ header #logo_site a:active {
 #modale_contact #modale_contact_container {
   position: inherit;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F7DCB9;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 80%;
+}
+#modale_contact #modale_contact_container #form_contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+#modale_contact #modale_contact_container #form_contact #img_form img {
+  width: 80%;
+}
+#modale_contact #modale_contact_container #form_contact .wpforms-field {
+  width: 30rem;
+  margin: -20px 0;
+}
+#modale_contact #modale_contact_container #form_contact .wpforms-required-label {
+  display: none;
+}
+#modale_contact #modale_contact_container #form_contact textarea {
+  resize: none;
+  border: solid 1px #212121;
+  border-radius: 10px;
+}
+#modale_contact #modale_contact_container #form_contact textarea:focus {
+  border: solid 1px #ffbf00;
+}
+#modale_contact #modale_contact_container #form_contact input {
+  border: solid 1px #212121;
+  border-radius: 10px;
+}
+#modale_contact #modale_contact_container #form_contact input:focus {
+  border: solid 1px #ffbf00;
+}
+#modale_contact #modale_contact_container #form_contact .wpforms-submit-container {
+  display: flex;
+  justify-content: right;
+  margin-top: 2rem;
+}
+#modale_contact #modale_contact_container #form_contact .wpforms-submit-container button {
+  background-color: #212121;
+  color: #ffbf00;
+  text-transform: uppercase;
 }
 
 #sections_link_container {
@@ -302,8 +397,7 @@ header #logo_site a:active {
 #projects_min_container {
   height: 100%;
   width: 100%;
-  background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/old_paper_background.jpg");
-  background-size: cover;
+  background-color: #212121;
   margin: -2rem 0;
   padding: 2rem 0 3rem 0;
 }

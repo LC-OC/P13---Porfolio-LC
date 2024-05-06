@@ -6,8 +6,13 @@
     left: 0;
     z-index: 1000;
     background: rgba(0, 0, 0, 0.5);
+    //background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/form_background.jpg");
+    //background-size: cover;
     visibility: hidden;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &.overlay {
         visibility: visible;
         opacity: 1;
@@ -15,6 +20,64 @@
     #modale_contact_container {
         position: inherit;
         z-index: 2;
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        //background: rgba(255, 255, 255, 0.35);
+        background-color: #F7DCB9;
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        //backdrop-filter: blur(5px);
+        //-webkit-backdrop-filter: blur(5px);
+        //border: 1px solid rgba(255, 255, 255, 0.3);
+        width: 80%;
+        #form_contact {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+            font-family: $raleway;
+            text-transform: uppercase;
+            font-size: 14px;
+            #img_form {
+                img {
+                   width: 80%;
+                }
+            }
+            .wpforms-field {
+                //width: 100%;
+                width: 30rem;
+                margin: -20px 0;
+            }
+            .wpforms-required-label {
+                display: none;
+            }
+            textarea {
+                resize: none;
+                border: solid 1px #212121;
+                border-radius: 10px;
+                &:focus {
+                    border: solid 1px #ffbf00;
+                }
+              }
+              input {
+                border: solid 1px #212121;
+                border-radius: 10px;
+                &:focus {
+                    border: solid 1px #ffbf00;
+                }
+              }
+              .wpforms-submit-container {
+                display: flex;
+                justify-content: right;
+                margin-top: 2rem;
+                button {
+                    background-color: #212121;
+                    color: #ffbf00;
+                    text-transform: uppercase;
+                }
+              }
+        }
     }
     }

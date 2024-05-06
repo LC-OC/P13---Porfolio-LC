@@ -9,8 +9,9 @@
 <body> 
     <header>
         <div id="logo_site">
+            <img src="http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/logo_simple.png" alt="">
             <a href="http://localhost/portfolio-lc/">
-                <span>LOGO</span>
+                <span>Portfolio LC</span>
             </a>
         </div>
         <nav>

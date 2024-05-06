@@ -15,6 +15,13 @@ header {
         font-size: 16px;
         font-family: $enchanted-land;
         color: #FDF7E4;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 24px;
+        img {
+            height: 50px;
+        }
         a {
             text-decoration: none;
             color: #FDF7E4;

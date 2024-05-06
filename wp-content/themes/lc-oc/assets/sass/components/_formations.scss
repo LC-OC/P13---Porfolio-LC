@@ -1,18 +1,26 @@
 #formations_container {
     height: 100%;
     width: 100%;
-    background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_project.jpg");
-    background-size: cover;
+    //background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_project.jpg");
+    //background-size: cover;
+    background-color: #212121;
     color: #B9B7BD;
     padding: 2rem 0;
     h2 {
-        color: #B14463;
+        //color: #B14463;
+        color: #FFEAA7;
         padding: 2rem;
         text-align: center;
         font-family: $against-regular;
         text-transform: uppercase;
+        &::before {
+            content: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/sea_life.png");
+            position: absolute;
+            right: 10rem;
+            bottom: -44rem;
+        }
         &::after {
-            content: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/merman.png");
+            content: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/merman_white.png");
             position: absolute;
             left: -5rem;
             bottom: -36rem;
@@ -42,11 +50,32 @@
         #formation_js {
             position: absolute;
             right: 0;
+            ul {
+                margin-left: -25px;
+            }
         }
         #formation_wp {
             position: absolute;
             left: 0;
             bottom: -38rem;
+        }
+        ul {
+            font-family: $raleway;
+            color: black;
+            font-weight: 600;
+            font-size: 16px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            li {
+                list-style: none;
+                position: relative;
+                padding: 0 10px;
+            }
+            i {
+                color: #FFEAA7;
+            }
         }
     }
 }

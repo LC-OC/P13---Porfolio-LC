@@ -18,4 +18,7 @@
             <?php endforeach ?>
         </div>
     </div>
+    <div id="show_footer">
+        <i class="fa-solid fa-chevron-up fa-xl" id="icon_show_footer"></i>
+    </div>
 </div>

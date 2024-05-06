@@ -1,4 +1,12 @@
+#show_footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    
+}
+
 footer {
+    display: none;
     background-image: url('http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/stars_background.jpg');
     background-size: auto;
     color: #FDF7E4;
