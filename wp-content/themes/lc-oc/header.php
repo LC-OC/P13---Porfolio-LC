@@ -9,7 +9,7 @@
 <body> 
     <header>
         <div id="logo_site">
-            <img src="http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/logo_simple.png" alt="">
+            <img src="http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/logo_simple_black.png" alt="">
             <a href="http://localhost/portfolio-lc/">
                 <span>Portfolio LC</span>
             </a>

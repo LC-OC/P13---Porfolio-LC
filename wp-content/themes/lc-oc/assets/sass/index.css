@@ -402,7 +402,7 @@ header #logo_site a:active {
   padding: 2rem 0 3rem 0;
 }
 #projects_min_container h2 {
-  color: #B14463;
+  color: #FFEAA7;
   padding: 2rem;
   text-align: center;
   font-family: "againstRegular", sans-serif;
@@ -412,29 +412,35 @@ header #logo_site a:active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 4rem;
 }
 #projects_min_container #projects_min_list .project_min_content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
-#projects_min_container #projects_min_list .project_min_content img {
-  height: 500px;
+#projects_min_container #projects_min_list .project_min_content .img_project {
+  height: 250px;
+  width: 400px;
+  border: solid 1px #FFEAA7;
+  padding: 1rem;
 }
-#projects_min_container #projects_min_list .project_min_content a {
+#projects_min_container #projects_min_list .project_min_content .img_project img {
+  height: 250px;
+  width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#projects_min_container #projects_min_list .project_min_content .link_project {
   text-decoration: none;
-  color: black;
+  color: #FFEAA7;
   font-family: "againstRegular", sans-serif;
+  border-bottom: solid 1px #FFEAA7;
+  font-size: 0.8rem;
 }
-#projects_min_container #projects_min_list .project_min_content:hover {
-  background: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-  transform: scale(1.1);
-  border-radius: 15px 30px;
+#projects_min_container #projects_min_list .project_min_content .link_project:hover {
+  border-bottom: solid 1px #B14463;
+  color: #B14463;
 }
 
 .carousel_skills {
