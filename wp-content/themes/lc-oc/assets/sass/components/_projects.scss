@@ -1,27 +1,44 @@
 .project_container {
     width: 100%;
-    background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_project.jpg");
-    background-size: cover;
+    height: 100vh;
+    background-color: #212121;
     .project_page  {
-        padding: 3rem 0;
+        padding-top: 7rem;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
         .infos_project{
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-left: -8rem;
-            margin-top: 8rem;
             h1 {
                 font-family: $against-regular;
-                color: #A81A40;
+                color: #FFEAA7;
                 font-size: 38px;
             }
             font-family: $raleway;
-            .separator {
-            width: 50%;
+            .link_project {
+                width: 7rem;
+                height: 4rem;
+                background-color: #212121;
+                color: #FFEAA7;
+                border : solid 1px #B14463;
+                text-transform: uppercase;
+                font-weight: 500;
+                cursor: pointer;
+            }
         }
+        .image_project {
+            height: 450px;
+            width: 700px;
+            border: solid 1px #FFEAA7;
+            padding: 1rem;
+            img {
+                height: 450px;
+                width: 700px;
+                object-fit: cover;
+            }
         }
     }
 }

@@ -17,17 +17,10 @@ body {
   height: 100%;
 }
 
-#show_footer {
-  display: flex;
-  justify-content: center;
-  margin-top: 3rem;
-}
-
 footer {
-  display: none;
-  background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/stars_background.jpg");
-  background-size: auto;
-  color: #FDF7E4;
+  background-color: #212121;
+  color: #FFEAA7;
+  padding: 2rem 0;
 }
 footer #menu-footer {
   list-style-type: none;
@@ -49,6 +42,9 @@ footer a:visited {
 }
 footer a:active {
   color: #FDF7E4;
+}
+footer a:hover {
+  color: #B14463;
 }
 
 #formations_container {
@@ -350,30 +346,48 @@ header #logo_site a:active {
 
 .project_container {
   width: 100%;
-  background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_project.jpg");
-  background-size: cover;
+  height: 100vh;
+  background-color: #212121;
 }
 .project_container .project_page {
-  padding: 3rem 0;
+  padding-top: 7rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 .project_container .project_page .infos_project {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: -8rem;
-  margin-top: 8rem;
   font-family: "Raleway", sans-serif;
 }
 .project_container .project_page .infos_project h1 {
   font-family: "againstRegular", sans-serif;
-  color: #A81A40;
+  color: #FFEAA7;
   font-size: 38px;
 }
-.project_container .project_page .infos_project .separator {
-  width: 50%;
+.project_container .project_page .infos_project .link_project {
+  width: 7rem;
+  height: 4rem;
+  background-color: #212121;
+  color: #FFEAA7;
+  border: solid 1px #B14463;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+.project_container .project_page .image_project {
+  height: 450px;
+  width: 700px;
+  border: solid 1px #FFEAA7;
+  padding: 1rem;
+}
+.project_container .project_page .image_project img {
+  height: 450px;
+  width: 700px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #skills_container {
@@ -412,12 +426,13 @@ header #logo_site a:active {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   padding: 0 4rem;
+  justify-content: center;
 }
 #projects_min_container #projects_min_list .project_min_content {
   display: flex;
   flex-direction: column;
+  margin: 4rem;
 }
 #projects_min_container #projects_min_list .project_min_content .img_project {
   height: 250px;
