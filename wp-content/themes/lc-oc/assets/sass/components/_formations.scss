@@ -13,11 +13,18 @@
         text-align: center;
         font-family: $against-regular;
         text-transform: uppercase;
+        @media screen and (max-width: 700px) {
+            text-align: right;
+        }
         &::before {
             content: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/sea_life.png");
             position: absolute;
             right: 10rem;
             bottom: -46rem;
+            @media screen and (max-width: 700px) {
+                bottom: -58rem;
+                right: 5rem;
+            }
         }
         &::after {
             content: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/merman_white.png");
@@ -29,6 +36,9 @@
     #formations {
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 700px) {
+            align-items: center;
+        }
         .cards_formations {
             width: 40%;
             background: rgba(255, 255, 255, 0.35);
@@ -40,6 +50,10 @@
             text-align: center;
             padding: 3rem;
             margin: 2rem;
+            @media screen and (max-width: 700px) {
+                flex-direction: column;
+                width: 80%;
+            }
             h3 {
                 color: #0A0708;
                 font-family: $against-regular;
@@ -50,6 +64,10 @@
         #formation_js {
             position: absolute;
             right: 0;
+            @media screen and (max-width: 700px) {
+                right: unset;
+                position: relative;
+            }
             ul {
                 margin-left: -25px;
             }
@@ -58,6 +76,11 @@
             position: absolute;
             left: 0;
             bottom: -38rem;
+            @media screen and (max-width: 700px) {
+                left: unset;
+                bottom: unset;
+                position: relative;
+            }
         }
         ul {
             font-family: $raleway;

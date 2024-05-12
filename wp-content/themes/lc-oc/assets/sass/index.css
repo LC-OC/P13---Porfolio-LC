@@ -34,6 +34,17 @@ footer #menu-footer {
   padding: 1rem 15rem;
   font-family: "Raleway", sans-serif;
 }
+@media screen and (max-width: 700px) {
+  footer #menu-footer {
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer #menu-footer li {
+    padding: 0.5rem 0;
+    font-size: 20px;
+  }
+}
 footer a {
   text-decoration: none;
   margin: 0 1rem;
@@ -66,11 +77,22 @@ footer i:hover {
   font-family: "againstRegular", sans-serif;
   text-transform: uppercase;
 }
+@media screen and (max-width: 700px) {
+  #formations_container h2 {
+    text-align: right;
+  }
+}
 #formations_container h2::before {
   content: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/sea_life.png");
   position: absolute;
   right: 10rem;
   bottom: -46rem;
+}
+@media screen and (max-width: 700px) {
+  #formations_container h2::before {
+    bottom: -58rem;
+    right: 5rem;
+  }
 }
 #formations_container h2::after {
   content: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/merman_white.png");
@@ -81,6 +103,11 @@ footer i:hover {
 #formations_container #formations {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 700px) {
+  #formations_container #formations {
+    align-items: center;
+  }
 }
 #formations_container #formations .cards_formations {
   width: 40%;
@@ -94,6 +121,12 @@ footer i:hover {
   padding: 3rem;
   margin: 2rem;
 }
+@media screen and (max-width: 700px) {
+  #formations_container #formations .cards_formations {
+    flex-direction: column;
+    width: 80%;
+  }
+}
 #formations_container #formations .cards_formations h3 {
   color: #0A0708;
   font-family: "againstRegular", sans-serif;
@@ -104,6 +137,12 @@ footer i:hover {
   position: absolute;
   right: 0;
 }
+@media screen and (max-width: 700px) {
+  #formations_container #formations #formation_js {
+    right: unset;
+    position: relative;
+  }
+}
 #formations_container #formations #formation_js ul {
   margin-left: -25px;
 }
@@ -111,6 +150,13 @@ footer i:hover {
   position: absolute;
   left: 0;
   bottom: -38rem;
+}
+@media screen and (max-width: 700px) {
+  #formations_container #formations #formation_wp {
+    left: unset;
+    bottom: unset;
+    position: relative;
+  }
 }
 #formations_container #formations ul {
   font-family: "Raleway", sans-serif;
@@ -145,6 +191,12 @@ header {
   -webkit-backdrop-filter: blur(5px);
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 }
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+}
 header #logo_site {
   font-size: 16px;
   font-family: "enchantedLand", sans-serif;
@@ -177,6 +229,11 @@ header #logo_site a:active {
   padding-bottom: 3rem;
   padding-top: 2rem;
 }
+@media screen and (max-width: 700px) {
+  #hobbies_container {
+    padding-bottom: 60rem;
+  }
+}
 #hobbies_container h2 {
   color: white;
   padding: 2rem;
@@ -192,6 +249,11 @@ header #logo_site a:active {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+}
+@media screen and (max-width: 700px) {
+  #hobbies_container #hobbies_list {
+    flex-direction: column;
+  }
 }
 #hobbies_container #hobbies_list .hobbies {
   display: flex;
@@ -316,6 +378,11 @@ header #logo_site a:active {
   font-weight: 400;
   margin-right: 3rem;
 }
+@media screen and (max-width: 700px) {
+  #sections_link_container {
+    display: none;
+  }
+}
 #sections_link_container ul {
   display: flex;
   flex-direction: row;
@@ -355,6 +422,11 @@ header #logo_site a:active {
   font-weight: 500;
   text-shadow: 1px 1px 1px black;
 }
+@media mobile {
+  #presentation_container h1 {
+    color: purple;
+  }
+}
 #presentation_container h2 {
   font-size: 105px;
   margin-top: -1.5rem;
@@ -362,6 +434,12 @@ header #logo_site a:active {
   width: 50%;
   font-weight: 400;
   text-shadow: 1px 1px 1px black;
+}
+@media screen and (max-width: 700px) {
+  #presentation_container h2 {
+    margin-top: unset;
+    width: 70%;
+  }
 }
 
 .project_container {
@@ -376,6 +454,12 @@ header #logo_site a:active {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 700px) {
+  .project_container .project_page {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .project_container .project_page .infos_project {
   display: flex;
   flex-direction: column;
@@ -384,20 +468,42 @@ header #logo_site a:active {
   margin-left: -5rem;
   font-family: "Raleway", sans-serif;
 }
+@media screen and (max-width: 700px) {
+  .project_container .project_page .infos_project {
+    margin-bottom: 2rem;
+    width: 100%;
+    margin-left: unset;
+  }
+}
 .project_container .project_page .infos_project h1 {
   font-family: "againstRegular", sans-serif;
   color: #FFEAA7;
   font-size: 38px;
+}
+@media screen and (max-width: 700px) {
+  .project_container .project_page .infos_project h1 {
+    text-align: center;
+  }
 }
 .project_container .project_page .infos_project .titre {
   width: 50%;
   color: white;
   text-align: center;
 }
+@media screen and (max-width: 700px) {
+  .project_container .project_page .infos_project .titre {
+    width: 100%;
+  }
+}
 .project_container .project_page .infos_project .description {
   width: 50%;
   color: white;
   text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .project_container .project_page .infos_project .description {
+    width: 100%;
+  }
 }
 .project_container .project_page .infos_project .list_technologies {
   color: white;
@@ -433,11 +539,25 @@ header #logo_site a:active {
   border: solid 1px #FFEAA7;
   padding: 1rem;
 }
+@media screen and (max-width: 700px) {
+  .project_container .project_page .image_project {
+    height: 250px;
+    width: 500px;
+    margin-right: unset;
+    margin-bottom: 2rem;
+  }
+}
 .project_container .project_page .image_project img {
   height: 450px;
   width: 700px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media screen and (max-width: 700px) {
+  .project_container .project_page .image_project img {
+    height: 250px;
+    width: 500px;
+  }
 }
 
 #skills_container {
@@ -465,6 +585,11 @@ header #logo_site a:active {
   margin: -2rem 0;
   padding: 2rem 0 3rem 0;
 }
+@media screen and (max-width: 700px) {
+  #projects_min_container {
+    padding-bottom: 14rem;
+  }
+}
 #projects_min_container h2 {
   color: #FFEAA7;
   padding: 2rem;
@@ -478,6 +603,11 @@ header #logo_site a:active {
   align-items: center;
   padding: 0 4rem;
   justify-content: center;
+}
+@media screen and (max-width: 700px) {
+  #projects_min_container #projects_min_list {
+    flex-direction: column;
+  }
 }
 #projects_min_container #projects_min_list .project_min_content {
   display: flex;
@@ -524,10 +654,22 @@ header #logo_site a:active {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 700px) {
+  .carousel_skills {
+    margin-top: 8rem;
+  }
+}
 .carousel_skills .slide_carousel_skill {
   font-family: "Raleway", sans-serif;
   font-size: 24px;
   font-weight: 500;
+}
+@media screen and (max-width: 700px) {
+  .carousel_skills .slide_carousel_skill {
+    font-size: 20px;
+    padding: 0 2rem;
+    text-align: center;
+  }
 }
 .carousel_skills #arrow_left_carousel_skills, .carousel_skills #arrow_right_carousel_skills {
   cursor: pointer;

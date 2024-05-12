@@ -13,6 +13,9 @@
         font-size: 55px;
         font-weight: 500;
         text-shadow: 1px 1px 1px black;
+        @media #{mobile} {
+            color: purple;
+        }
     }
     h2 {
         font-size: 105px;
@@ -22,6 +25,10 @@
         width: 50%;
         font-weight: 400;
         text-shadow: 1px 1px 1px black;
+        @media screen and (max-width: 700px) {
+            margin-top: unset;
+            width: 70%;
+         }
         
     }
 }

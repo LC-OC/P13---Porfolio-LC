@@ -13,10 +13,18 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 700px) {
+        margin-top: 8rem;
+    }
     .slide_carousel_skill {
         font-family: $raleway;
         font-size: 24px;
         font-weight: 500;
+        @media screen and (max-width: 700px) {
+            font-size: 20px;
+            padding: 0 2rem;
+            text-align: center;
+        }
     }
     #arrow_left_carousel_skills, #arrow_right_carousel_skills {
         cursor: pointer;
