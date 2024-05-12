@@ -1,5 +1,6 @@
 #presentation_container {
     height: 100%;
+    width: 100%;
     background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/baroque_background.png");
     background-size: cover;
     font-family: $enchanted-land;
@@ -16,7 +17,8 @@
     h2 {
         font-size: 105px;
         margin-top: -1.5rem;
-        margin-right: -16rem;
+        text-align: center;
+        //margin-right: -16rem;
         width: 50%;
         font-weight: 400;
         text-shadow: 1px 1px 1px black;

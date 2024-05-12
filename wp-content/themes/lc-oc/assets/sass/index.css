@@ -21,6 +21,7 @@ footer {
   background-color: #212121;
   color: #FFEAA7;
   padding: 2rem 0;
+  border-top: solid 1px #B14463;
 }
 footer #menu-footer {
   list-style-type: none;
@@ -28,13 +29,14 @@ footer #menu-footer {
   padding: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
   padding: 1rem 15rem;
   font-family: "Raleway", sans-serif;
 }
 footer a {
   text-decoration: none;
-  padding: 0 1rem;
+  margin: 0 1rem;
   color: #FDF7E4;
 }
 footer a:visited {
@@ -45,6 +47,9 @@ footer a:active {
 }
 footer a:hover {
   color: #B14463;
+}
+footer i:hover {
+  color: #FDF7E4;
 }
 
 #formations_container {
@@ -65,7 +70,7 @@ footer a:hover {
   content: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/sea_life.png");
   position: absolute;
   right: 10rem;
-  bottom: -44rem;
+  bottom: -46rem;
 }
 #formations_container h2::after {
   content: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/merman_white.png");
@@ -150,7 +155,8 @@ header #logo_site {
   font-size: 24px;
 }
 header #logo_site img {
-  height: 50px;
+  height: 35px;
+  margin-right: 0.5rem;
 }
 header #logo_site a {
   text-decoration: none;
@@ -164,6 +170,7 @@ header #logo_site a:active {
 }
 
 #hobbies_container {
+  height: 100vh;
   background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/background_hobbies.jpg");
   background-size: cover;
   color: white;
@@ -174,45 +181,57 @@ header #logo_site a:active {
   color: white;
   padding: 2rem;
   text-align: right;
+  margin-right: 8rem;
   font-family: "againstRegular", sans-serif;
   text-transform: uppercase;
   font-size: 3rem;
+  text-shadow: 1px 1px 1px black;
 }
-#hobbies_container #hobbies_content {
+#hobbies_container #hobbies_list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
 }
-#hobbies_container #hobbies_content #hobbies_infos #travel_hobby_hide, #hobbies_container #hobbies_content #hobbies_infos #reading_hobby_hide, #hobbies_container #hobbies_content #hobbies_infos #movies_hobby_hide, #hobbies_container #hobbies_content #hobbies_infos #gaming_hobby_hide {
-  display: none;
-}
-#hobbies_container #hobbies_content #hobbies_list {
-  width: 60%;
+#hobbies_container #hobbies_list .hobbies {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#hobbies_container #hobbies_content #hobbies_list #travel_hobby {
+#hobbies_container #hobbies_list .hobbies #travel_hobby_hide, #hobbies_container #hobbies_list .hobbies #reading_hobby_hide, #hobbies_container #hobbies_list .hobbies #movies_hobby_hide, #hobbies_container #hobbies_list .hobbies #gaming_hobby_hide {
+  display: none;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.67);
+}
+#hobbies_container #hobbies_list .hobbies #travel_hobby {
   width: 600px;
-  padding-right: 4rem;
   filter: grayscale(100%);
   cursor: pointer;
 }
-#hobbies_container #hobbies_content #hobbies_list #travel_hobby:hover {
-  transform: scale(1.1);
+#hobbies_container #hobbies_list .hobbies #travel_hobby:hover {
   filter: grayscale(0);
 }
-#hobbies_container #hobbies_content #hobbies_list #reading_hobby, #hobbies_container #hobbies_content #hobbies_list #movies_hobby, #hobbies_container #hobbies_content #hobbies_list #gaming_hobby {
+#hobbies_container #hobbies_list .hobbies #travel_hobby:hover + #travel_hobby_hide {
+  display: block;
+}
+#hobbies_container #hobbies_list .hobbies #reading_hobby, #hobbies_container #hobbies_list .hobbies #movies_hobby, #hobbies_container #hobbies_list .hobbies #gaming_hobby {
   width: 250px;
   filter: grayscale(100%);
   cursor: pointer;
 }
-#hobbies_container #hobbies_content #hobbies_list #reading_hobby:hover, #hobbies_container #hobbies_content #hobbies_list #movies_hobby:hover, #hobbies_container #hobbies_content #hobbies_list #gaming_hobby:hover {
-  transform: scale(1.1);
+#hobbies_container #hobbies_list .hobbies #reading_hobby:hover, #hobbies_container #hobbies_list .hobbies #movies_hobby:hover, #hobbies_container #hobbies_list .hobbies #gaming_hobby:hover {
   filter: grayscale(0);
+}
+#hobbies_container #hobbies_list .hobbies #reading_hobby:hover + #reading_hobby_hide {
+  display: block;
+}
+#hobbies_container #hobbies_list .hobbies #movies_hobby:hover + #movies_hobby_hide {
+  display: block;
+}
+#hobbies_container #hobbies_list .hobbies #gaming_hobby:hover + #gaming_hobby_hide {
+  display: block;
 }
 
 #modale_contact {
@@ -321,6 +340,7 @@ header #logo_site a:active {
 
 #presentation_container {
   height: 100%;
+  width: 100%;
   background-image: url("http://localhost/portfolio-lc/wp-content/themes/lc-oc/assets/images/baroque_background.png");
   background-size: cover;
   font-family: "enchantedLand", sans-serif;
@@ -338,7 +358,7 @@ header #logo_site a:active {
 #presentation_container h2 {
   font-size: 105px;
   margin-top: -1.5rem;
-  margin-right: -16rem;
+  text-align: center;
   width: 50%;
   font-weight: 400;
   text-shadow: 1px 1px 1px black;
@@ -350,7 +370,7 @@ header #logo_site a:active {
   background-color: #212121;
 }
 .project_container .project_page {
-  padding-top: 7rem;
+  padding-top: 8rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -360,6 +380,8 @@ header #logo_site a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
+  margin-left: -5rem;
   font-family: "Raleway", sans-serif;
 }
 .project_container .project_page .infos_project h1 {
@@ -367,9 +389,33 @@ header #logo_site a:active {
   color: #FFEAA7;
   font-size: 38px;
 }
+.project_container .project_page .infos_project .titre {
+  width: 50%;
+  color: white;
+  text-align: center;
+}
+.project_container .project_page .infos_project .description {
+  width: 50%;
+  color: white;
+  text-align: center;
+}
+.project_container .project_page .infos_project .list_technologies {
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+.project_container .project_page .infos_project .list_technologies li {
+  list-style: none;
+  position: relative;
+  padding: 0 10px;
+}
+.project_container .project_page .infos_project .fa-moon {
+  color: #FFEAA7;
+}
 .project_container .project_page .infos_project .link_project {
   width: 7rem;
   height: 4rem;
+  margin: 1rem;
   background-color: #212121;
   color: #FFEAA7;
   border: solid 1px #B14463;
@@ -377,9 +423,13 @@ header #logo_site a:active {
   font-weight: 500;
   cursor: pointer;
 }
+.project_container .project_page .infos_project .link_project:hover {
+  color: white;
+}
 .project_container .project_page .image_project {
   height: 450px;
   width: 700px;
+  margin-right: 4rem;
   border: solid 1px #FFEAA7;
   padding: 1rem;
 }

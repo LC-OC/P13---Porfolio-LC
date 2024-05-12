@@ -3,7 +3,7 @@
     height: 100vh;
     background-color: #212121;
     .project_page  {
-        padding-top: 7rem;
+        padding-top: 8rem;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -12,26 +12,56 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 50%;
+            margin-left: -5rem;
             h1 {
                 font-family: $against-regular;
                 color: #FFEAA7;
                 font-size: 38px;
             }
+            .titre {
+                width: 50%;
+                color: white;
+                text-align: center;
+            }
+            .description {
+                width: 50%;
+                color: white;
+                text-align: center;
+            }
             font-family: $raleway;
+            .list_technologies {
+                color: white;
+                display: flex;
+                flex-direction: row;
+                li {
+                    list-style: none;
+                    position: relative;
+                    padding: 0 10px;
+                }
+            }
+            .fa-moon {
+                color: #FFEAA7;
+            }
             .link_project {
                 width: 7rem;
                 height: 4rem;
+                margin: 1rem;
                 background-color: #212121;
                 color: #FFEAA7;
                 border : solid 1px #B14463;
                 text-transform: uppercase;
                 font-weight: 500;
                 cursor: pointer;
+                &:hover {
+                    color: white;
+                }
             }
         }
         .image_project {
             height: 450px;
             width: 700px;
+            margin-right: 4rem;
             border: solid 1px #FFEAA7;
             padding: 1rem;
             img {
